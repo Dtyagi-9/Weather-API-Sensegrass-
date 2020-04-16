@@ -12,8 +12,6 @@ const forecast1 = (latitude,longitude,callback)=>{
         callback(chalk.red.inverse('unable to find the location!'),undefined)
     }
     else{
-        console.log("forecast1");
-        console.log(response.body.currently)
         callback(undefined,response.body.currently)//.daily.data[0].summary 
     }
     })   
@@ -28,8 +26,6 @@ const forecast2 = (latitude,longitude,callback)=>{
         callback(chalk.red.inverse('unable to find the location!'),undefined)
     }
     else{
-        console.log("forcast2");
-        console.log(response.body);
         callback(undefined,response.body)//.daily.data[0].summary 
     }
     })   
